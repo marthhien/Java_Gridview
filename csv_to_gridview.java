@@ -101,12 +101,12 @@ public class csv_to_gridview {
 
                 firstRow = br.readLine().trim();
                 if (firstRow != null) {
-                    // headers:
-                    columnIdentifiers = firstRow.split(",");
-    
-                    vectorColumnIdentifiers = new Vector<String>();
-                    for (int j =0; j < columnIdentifiers.length; j++) {
-                        vectorColumnIdentifiers.add(columnIdentifiers[j]);
+
+                // headers:
+                columnIdentifiers = firstRow.split(",");
+                vectorColumnIdentifiers = new Vector<String>();
+                for (int j =0; j < columnIdentifiers.length; j++) {
+                    vectorColumnIdentifiers.add(columnIdentifiers[j]);
                     }
 
                 }
