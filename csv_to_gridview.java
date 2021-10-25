@@ -10,7 +10,7 @@ import javax.swing.JTable;
 import javax.swing.table.AbstractTableModel;
 import java.awt.*;
 import java.awt.event.*;
-import java.io .*;
+import java.io.*;
 import java.io.File;
 import java.io.BufferedReader;
 import java.io.FileReader;
