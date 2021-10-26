@@ -102,8 +102,9 @@ public class csv_to_gridview {
                 firstRow = br.readLine().trim();
                 if (firstRow != null) {
 
-                // headers:
+                // headers
                 columnIdentifiers = firstRow.split(",");
+
                 vectorColumnIdentifiers = new Vector<String>();
                 for (int j =0; j < columnIdentifiers.length; j++) {
                     vectorColumnIdentifiers.add(columnIdentifiers[j]);
@@ -114,7 +115,6 @@ public class csv_to_gridview {
                 // rows
                 Object[] tableLines = br.lines().toArray();
 
-                // data rows
                 for (int i = 0; i < tableLines.length; i++) {
                     String line = tableLines[i].toString().trim();
                     String[] dataRow = line.split(",");
